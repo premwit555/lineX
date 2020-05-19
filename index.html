@@ -75,12 +75,17 @@
     }
 
     function getEnvironment() {
+    document.getElementById("os").appent(liff.getOS())
+      document.getElementById("language").appent(liff.getLanguage())
+      document.getElementById("version").appent(liff.getVersion())
+      document.getElementById("accessToken").appent(liff.getAccessToken())
+
     }
 
     async function main() {
       
       await liff.init({ liffId: "1654239103-ZE5Ypopw" })
-      // getEnvironment()
+       getEnvironment()
       // getUserProfile()
       // getContext()
       // getFriendship()
